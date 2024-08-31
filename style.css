@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3498db; /* Bright blue background */
+  background-image: linear-gradient(
+    to bottom,
+    #3498db,
+    #2ecc71
+  ); /* Gradient background */
+}
+
+::placeholder {
+  color: rgb(255, 248, 248);
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+.container {
+  /* Add styles for the container div */
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the container */
+  border: 1px solid #ddd; /* Light gray border for the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  background-color: #ffffff; /* Pastel orange background for task list */
+}
+
+#task-list li {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 20px;
+  border-bottom: 1px solid #ccc;
+  list-style-type: disc;
+  background-color: #8d68fa; /* White background for task list items */
+  transition: background-color 0.2s ease;
+}
+
+#task-list li:last-child {
+  border-bottom: none;
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  background-color: #8e44ad; /* Deep plum background for completed tasks */
+}
+
+#task-list li:hover {
+  background-color: #e74c3c; /* Burnt orange background on hover */
+}
+
+#task-input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  background-color: #3d7ec4; /* Dark blue background for input field */
+  border: 1px solid #0a0a0a; /* Bright blue border for input field */
+  color: #ffffff; /* Light gray text for input field */
+}
+
+#add-task-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1abc9c; /* Pastel green background for add task button */
+  color: #ffffff; /* White text for add task button */
+  cursor: pointer;
+}
+
+#add-task-btn:hover {
+  background-color: #16a085; /* Deep teal background on hover */
+}
+
+#reset-btn {
+  /* Add styles for the reset button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e74c3c; /* Burnt orange background for reset button */
+  color: #fff; /* White text for reset button */
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #ff69b4; /* Hot pink background on hover */
+}
+
+/* Color scheme:
+* Primary color: #3498db (bright blue)
+* Secondary color: #f1c40f (pastel orange)
+* Accent color: #8e44ad (deep plum)
+* Background color: #2ecc71 (gradient background)
+* Text color: #333 (dark gray)
+* Pastel colors: #1abc9c (pastel green), #2c3e50 (dark blue)
+* Deep colors: #16a085 (deep teal), #e74c3c (burnt orange)
+*/
